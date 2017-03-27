@@ -92,8 +92,6 @@
 | active\_flag | enabled |  |
 | TRUE | public | 固定为TRUE |
 
-
-
 #### 七、报销单凭证创建
 
 该接口是定时拉取汇联易已审批通过的报销单至创业管家生成凭证，间隔十分钟，以ir.cron安排的工作
