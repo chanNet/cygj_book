@@ -53,8 +53,6 @@ def execute_job(session, model_name, method, record_ids, *args, **kwargs):
     getattr(model, method)(session.cr, session.uid, record_ids, *args, **kwargs)
 ```
 
-
-
 上面的**done\_method**会在批量任务的所有子任务完成后执行，定义了一个安排的动作ir\_cron，一分钟一次
 
 ![](/assets/ir_cron.png)
@@ -90,5 +88,5 @@ def execute_job_done_method(self):
     done_jobs.write({'is_done': True})
 ```
 
-
+例子：[发票匹配](/invoice.md)
 
